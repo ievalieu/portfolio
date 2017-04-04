@@ -1,0 +1,16 @@
+html {
+	height: 100%;
+}
+body {
+	background: url("./woodbkgd.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 300%;
+	color: white;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+p {
+	font-size: 2em;
+}

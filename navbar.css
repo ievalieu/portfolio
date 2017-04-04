@@ -1,0 +1,44 @@
+nav {
+	/*border: 1px solid pink;*/
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.brand-icon, .brand-title, .menu {
+	/*border: 1px solid pink;*/
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.brand-icon, .menu {
+	height: 50px;
+	width: 50px;
+}
+.hamburger {
+	background: none;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	border: none;
+}
+.cross {
+	height: 0px;
+	background: none;
+	font-size: 3.5em;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
