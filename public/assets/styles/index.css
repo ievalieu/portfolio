@@ -2,10 +2,11 @@ html {
 	height: 100%;
 }
 body {
-	background: url("./woodbkgd.jpg");
+	background: url("../images/woodbkgd.jpg");
 	background-repeat: no-repeat;
+    background-attachment: fixed;
 	background-position: center;
-	background-size: 100% 300%;
+	background-size: 100% 180%;
 	color: white;
 	min-height: 100%;
 	display: flex;
@@ -13,4 +14,24 @@ body {
 }
 p {
 	font-size: 2em;
+	color: black;
+	font-family: "Playfair Display", serif;
 }
+#eva {
+	font-size: 40px;
+	/*font-family: 'Poiret One', cursive;*/
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 1px 1px 1px #222;
+
+}
+#lieu {
+	font-size: 40px;
+	color: pink;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 1px 1px 1px #222;
+
+}
+
+
+	/*font-family: 'Cabin', sans-serif;
+*/

@@ -13,3 +13,10 @@ $(".cross").click(function() {
 		$(".hamburger").show();
 	});
 });
+
+function doFirst() {
+	canvas.
+
+}
+
+window.addEventListener("load", doFirst());

@@ -6,19 +6,34 @@
     <title>Home | ELLIEU</title>
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"> -->
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="./assets/styles/navbar.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
+	<link rel="stylesheet" href="./assets/styles/module-landing.css">
+	<link rel="stylesheet" href="./assets/styles/module-newfeed.css">
+    <link rel="stylesheet" href="./assets/styles/module-connect.css">
     <link rel="stylesheet" href="./assets/styles/sidebar.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">	
 </head>
 <body>
 	<!-- Navbar -->
 	<nav>
-		<div class="brand-icon"><a href="/home">EL</a></div>
-		<div class="brand-title"><a href="/home">EVA LIEU</a></div>
+		<div class="brand-icon">
+			<a href="/home"><img src="./assets/images/ell.png"></a>
+		</div>
+		<div class="brand-title">
+			<a href="/home">
+				<span id="eva">EVA</span>
+				<span id="lieu"> LIEU</span>
+			</a>
+		</div>
 		<div class="menu">
 			<button class="hamburger">&#9776;</button>
 			<button class="cross">&#735;</button>
@@ -36,48 +51,56 @@
 	</section>
 
 	<!-- Main -->
-	<main class="article-list" id="article-list">
+	<main>
 
+		<!-- Landing Module -->
 		<div class="card module-landing">
-			<div class="card-border">
-			<h2>WELCOME!</h2>
-			<img src="#" class="landing-image"/>
-			<p>Hiya, I’m a web developer, check out my work and learn more about me below:</p>
-			<button>Learn More</button>
+			<div class="card-border-top">
+				<h2>Hello World</h2>
 				
+				<img src="#" class="landing-image"/>
+				<p id="para">Hiya, I’m a web developer, check out my work and learn more about me below:</p>
+				<button>Learn More</button>
 			</div>
 		</div>
-		<div class="card module-newfeed">
-			<h2>NEWSFEED</h2>
-			<p>Check out some of my recent/in progress work below:</p>
-			<div class="sample-list">
-				<div class="sample"></div>
-				<div class="sample"></div>
-				<div class="sample"></div>
-			</div>
-			<p>Or check them all out here~</p>
-			<button>Learn More</button>
 
-		</div>
-		<div class="card module-connect">
-			<h2>CONNECT</h2>
-			<p>Wanna Connect?</p>
-			<div class="connect-list">
-				<img src="#"/>
-				<img src="#"/>
-				<img src="#"/>
-				<img src="#"/>
-				<img src="#"/>
+		<!-- Newsfeed Module -->
+		<div class="card module-newsfeed">
+			<div class="card-border-middle">
+				<h2>Newsfeed</h2>
+				<p>Check out some of my recent/in progress work below:</p>
+				<div class="sample-list">
+					<div class="sample"></div>
+					<div class="sample"></div>
+					<div class="sample"></div>
+				</div>
+				<p>Or check them all out here~</p>
+				<button>Learn More</button>
 			</div>
-			<p>Or if you wanna email me...</p>
-			<button>Contact Me</button>
-		</div>				
+		</div>
+
+		<!-- Connect Module -->
+		<div class="card module-connect">
+			<div class="card-border-bottom">
+				<h2>Connect</h2>
+				<p>Wanna Connect?</p>
+				<div class="connect-list">
+					<img src="#"/>
+					<img src="#"/>
+					<img src="#"/>
+					<img src="#"/>
+					<img src="#"/>
+				</div>
+				<p>Or if you wanna email me...</p>
+				<button>Contact Me</button>
+			</div>
+		</div>	
+
 	</main>
 
 	<!-- Footer -->
 	<footer>
-		<ul class="article-list__pagination article-list__pagination--inactive" id="article-list-pagination"></ul>
-		FOOTER
+		© 2017 Eva Lieu
 	</footer>
 
 <script type="text/javascript" src="./assets/js/index.js"></script>
