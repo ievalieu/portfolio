@@ -1,6 +1,6 @@
 section {
-	border: 1px solid blue;
-/*	background: black;*/
+	/*border: 1px solid blue;*/
+	background: white;
 }
 .sidebar {
 	display: flex;
@@ -9,10 +9,13 @@ section {
 }
 .sidebar-item {
 	flex: 1;
-	border: 1px solid pink;
+	/*border: 1px solid pink;*/
 	justify-content: space-around;
 	display: flex;
 	flex-direction: row;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color: black;
 }
 
 li {

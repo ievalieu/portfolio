@@ -14,9 +14,9 @@ $(".cross").click(function() {
 	});
 });
 
-function doFirst() {
-	canvas.
+// function doFirst() {
+// 	canvas.
 
-}
+// }
 
-window.addEventListener("load", doFirst());
+// window.addEventListener("load", doFirst());

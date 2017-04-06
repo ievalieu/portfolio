@@ -1,5 +1,9 @@
 .module-landing {
-	background: #704C5E;
+/*	background: #704C5E;*/
+	background: url(../images/van.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 70%;
+	background-size: 100%;
 }
 #para {
 	margin: 0 2em;
@@ -16,7 +20,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 .landing-image {
 	height: 200px;
 	width: 200px;

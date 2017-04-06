@@ -1,91 +1,91 @@
 
-function getPageId(n) {
-	return "article-page-" + n;
-}
+// function getPageId(n) {
+// 	return "article-page-" + n;
+// }
 
-function getDocumentHeight() {
-	const body = document.body;
-	const html = document.documentElement;
+// function getDocumentHeight() {
+// 	const body = document.body;
+// 	const html = document.documentElement;
 
-	return Math.max(
-		body.scrollHeight, body.offsetHeight,
-		html.clientHeight, html.scrollHeight, html.offsetHeight
-	);
-}
+// 	return Math.max(
+// 		body.scrollHeight, body.offsetHeight,
+// 		html.clientHeight, html.scrollHeight, html.offsetHeight
+// 	);
+// }
 
-function getScrollTop() {
-	return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-}
+// function getScrollTop() {
+// 	return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+// }
 
-function getArticleImage() {
-	const hash = Math.floor(Math.random() * Number.MAX_SAFE_INTEGER);
-	const image = new Image;
-	image.className = "article-list__item_image article-list__item__image--loading";
-	image.src = "http://api.adorable.io/avatars/250/" + hash;
+// function getArticleImage() {
+// 	const hash = Math.floor(Math.random() * Number.MAX_SAFE_INTEGER);
+// 	const image = new Image;
+// 	image.className = "article-list__item_image article-list__item__image--loading";
+// 	image.src = "http://api.adorable.io/avatars/250/" + hash;
 
-	image.onload = function() {
-		image.classList.remove("article-list__item__image--loading");
-	};
+// 	image.onload = function() {
+// 		image.classList.remove("article-list__item__image--loading");
+// 	};
 
-	return image;
-}
+// 	return image;
+// }
 
-function getArticle() {
-	const articleImage = getArticleImage();
-	const article = document.createElement("article");
-	article.className = "article-list__item";
-	article.appendChild(articleImage);
+// function getArticle() {
+// 	const articleImage = getArticleImage();
+// 	const article = document.createElement("article");
+// 	article.className = "article-list__item";
+// 	article.appendChild(articleImage);
 
-	return article;
-}
+// 	return article;
+// }
 
-function getArticlePage(page, articlesPerPage = 4) {
-	const pageElement = document.createElement("div");
-	pageElement.id = getPageId(page);
-	pageElement.className = "article-list__page";
+// function getArticlePage(page, articlesPerPage = 1) {
+// 	const pageElement = document.createElement("div");
+// 	pageElement.id = getPageId(page);
+// 	pageElement.className = "article-list__page";
 
-	while (articlesPerPage--) {
-		pageElement.appendChild(getArticle());
-	}
+// 	while (articlesPerPage--) {
+// 		pageElement.appendChild(getArticle());
+// 	}
 
-	return pageElement;
-}
+// 	return pageElement;
+// }
 
-function addPaginationPage(page) {
-	const pageLink = document.createElement("a");
-	pageLink.href= "#" + getPageId(page);
-	pageLink.innerHTML = page;
+// function addPaginationPage(page) {
+// 	const pageLink = document.createElement("a");
+// 	pageLink.href= "#" + getPageId(page);
+// 	pageLink.innerHTML = page;
 
-	const listItem = document.createElement("li");
-	listItem.className = "article-list__pagination__item";
-	listItem.appendChild(pageLink);
+// 	const listItem = document.createElement("li");
+// 	listItem.className = "article-list__pagination__item";
+// 	listItem.appendChild(pageLink);
 
-	articleListPagination.appendChild(listItem);
+// 	articleListPagination.appendChild(listItem);
 
-	if (page === 2) {
-		articleListPagination.classList.remove("article-list__pagination--inactive");
-	}
-}
+// 	if (page === 2) {
+// 		articleListPagination.classList.remove("article-list__pagination--inactive");
+// 	}
+// }
 
-function fetchPage(page) {
-	articleList.appendChild(getArticlePage(page));
-}
+// function fetchPage(page) {
+// 	articleList.appendChild(getArticlePage(page));
+// }
 
-function addPage(page) {
-	fetchPage(page);
-	addPaginationPage(page);
-}
+// function addPage(page) {
+// 	fetchPage(page);
+// 	addPaginationPage(page);
+// }
 
-const articleList = document.getElementById("article-list");
-const articleListPagination = document.getElementById("article-list-pagination");
-let page = 0;
+// const articleList = document.getElementById("article-list");
+// const articleListPagination = document.getElementById("article-list-pagination");
+// let page = 0;
 
-addPage(++page);
+// addPage(++page);
 
-window.onscroll = function() {
-	if (getScrollTop() < getDocumentHeight() - window.innerHeight) return;
-	addPage(++page);
-};
+// window.onscroll = function() {
+// 	if (getScrollTop() < getDocumentHeight() - window.innerHeight) return;
+// 	addPage(++page);
+// };
 
 
 

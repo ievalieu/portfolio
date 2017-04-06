@@ -1,5 +1,9 @@
 .module-connect {
-	background: #307473;
+	background: #E0E1DD;
+	/*background: url(../images/portal.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 70%;
+	background-size: 100%;*/
 }
 .card-border-bottom {
 	border: 10px solid pink;

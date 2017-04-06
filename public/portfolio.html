@@ -3,22 +3,36 @@
 <head>
  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | ELLIEU</title>
+    <title>Portfolio | ELLIEU</title>
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"> -->
-
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="./assets/styles/navbar.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/portfolio.css">
+	<link rel="stylesheet" href="./assets/styles/module-newfeed.css">
     <link rel="stylesheet" href="./assets/styles/sidebar.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/project.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">	
 </head>
 <body>
-	<!-- Navbar -->
+<!-- Navbar -->
 	<nav>
-		<div class="brand-icon"><a href="/home">EL</a></div>
-		<div class="brand-title"><a href="/home">EVA LIEU</a></div>
+		<div class="brand-icon">
+			<a href="/home"><img src="./assets/images/ell.png"></a>
+		</div>
+		<div class="brand-title">
+			<a href="/home">
+				<span id="eva">EVA</span>
+				<span id="lieu"> LIEU</span>
+			</a>
+		</div>
 		<div class="menu">
 			<button class="hamburger">&#9776;</button>
 			<button class="cross">&#735;</button>
@@ -28,26 +42,101 @@
 	<!-- Sidebar -->
 	<section>
 		<ul class="sidebar">
-			<a href="#" class="sidebar-item"><li>ABOUT</li></a>
-			<a href="#" class="sidebar-item"><li>PORTFOLIO</li></a>
-			<a href="#" class="sidebar-item"><li>CONTACT</li></a>
-			<a href="#" class="sidebar-item"><li>RESUME</li></a>			
+			<a href="/about" class="sidebar-item"><li>ABOUT</li></a>
+			<a href="/portfolio" class="sidebar-item"><li>PORTFOLIO</li></a>
+			<a href="/contact" class="sidebar-item"><li>CONTACT</li></a>
+			<a href="/resume" class="sidebar-item"><li>RESUME</li></a>			
 		</ul>
 	</section>
 
 	<!-- Main -->
 	<main>
-		<div class="card module-newfeed">
-			<h2>Portfolio</h2>
-			<p>RESEARCH | TECH | WRITING</p>
-			<div class="project-list article-list" id="article-list">
-<!-- 				<div class="project"></div>
-				<div class="project"></div>
-				<div class="project"></div>
- -->			</div>
+		<div class="portfolio module-newfeed">
+				<div>
+					<br/><br/><br/>
+					<h2>PORTFOLIO</h2>
+					<p style="text-align: center">
+						<span id="research">Research</span> | 
+						<span id="tech">Tech</span> | 
+						<span id="writing">Writing</span>
+					</p><br/><br/>
+				</div>
+				<div class="project-list article-list" id="article-list">
+					<div class="project">
+						<div class="summary target">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="project-image target">
+							<img src="#"/>
+						</div>
+						<div class="info">
+							<h3>PROJECT</h3>
+							<a>LINK</a>
+						</div>
+					</div>
+					<div class="project">
+						<div class="summary target">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="project-image target">
+							<img src="#"/>
+						</div>
+						<div class="info">
+							<h3>PROJECT</h3>
+							<a>LINK</a>
+						</div>
+					</div>
+					<div class="project">
+						<div class="summary target">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="project-image target">
+							<img src="#"/>
+						</div>
+						<div class="info">
+							<h3>PROJECT</h3>
+							<a>LINK</a>
+						</div>
+					</div>
+					<div class="project">
+						<div class="summary target">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="project-image target">
+							<img src="#"/>
+						</div>
+						<div class="info">
+							<h3>PROJECT</h3>
+							<a>LINK</a>
+						</div>
+					</div>
+					<div class="project">
+						<div class="summary target">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="project-image target">
+							<img src="#"/>
+						</div>
+						<div class="info">
+							<h3>PROJECT</h3>
+							<a>LINK</a>
+						</div>
+					</div>
+					<div class="project">
+						<div class="summary target">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="project-image target">
+							<img src="#"/>
+						</div>
+						<div class="info">
+							<h3>PROJECT</h3>
+							<a>LINK</a>
+						</div>
+					</div>
+				</div>
 
-		</div>
-						
+		</div>	
 	</main>
 
 	<!-- Footer -->
@@ -57,5 +146,6 @@
 	</footer>
 <script type="text/javascript" src="./assets/js/index.js"></script>
 <script type="text/javascript" src="./assets/js/portfolio.js"></script>
+<script type="text/javascript" src="./assets/js/project.js"></script>
 </body>
 </html>

@@ -10,35 +10,44 @@ nav {
 	/*border: 1px solid pink;*/
 	height: 100%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 }
 .brand-icon, .menu {
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 }
 .hamburger {
-	background: none;
 	font-size: 2.5em;	
-	text-shadow: 1px 1px 1px #222;
-	color: white;
-	cursor: pointer;
-	border: none;
-	justify-content: center;
 }
 .cross {
-	height: 0px;
-	background: none;
-	font-size: 3.5em;
+	height: 100%;
+	font-size: 5em;
 	font-weight: bold;
+	padding-top: 30px;
+}
+.hamburger, .cross {
 	color: white;
 	cursor: pointer;
-	position: absolute;
-	top: 10px;
-	right: 10px;
 	border: none;
+	background: none;
+	text-shadow: 1px 1px 1px #222;
 }
 a {
 	color: white;
 	text-decoration: none;
+}
+#eva {
+	font-size: 50px;
+	/*font-family: 'Poiret One', cursive;*/
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 2px 2px 2px #222;
+
+}
+#lieu {
+	font-size: 50px;
+	color: pink;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 2px 2px 2px #222;
+
 }
