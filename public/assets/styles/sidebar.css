@@ -2,11 +2,6 @@ section {
 	/*border: 1px solid blue;*/
 	background: white;
 }
-.sidebar {
-	display: flex;
-	flex-direction: row;
-	padding: 20px 50px;
-}
 .sidebar-item {
 	flex: 1;
 	/*border: 1px solid pink;*/
@@ -14,7 +9,7 @@ section {
 	display: flex;
 	flex-direction: row;
 	font-family: 'Raleway', sans-serif;
-	font-size: 30px;
+	/*font-size: 30px;*/
 	color: black;
 }
 

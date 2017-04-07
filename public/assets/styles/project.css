@@ -29,3 +29,7 @@
 	height: 50px;
 	float: left;
 }
+#research:hover, #tech:hover, #writing:hover {
+	cursor: pointer;
+	color: blue;
+}

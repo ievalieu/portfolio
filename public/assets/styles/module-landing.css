@@ -1,16 +1,15 @@
-.module-landing {
-/*	background: #704C5E;*/
+/*.module-landing {
+	background: #704C5E;
 	background: url(../images/van.gif);
 	background-repeat: no-repeat;
 	background-position: 50% 70%;
-	background-size: 100%;
-}
+	background-size: 100%
+}*/
 #para {
 	margin: 0 2em;
 	text-align: center;
 }
 .card-border-top {
-	border: 10px solid pink;
 	border-bottom: none;
 	height: 75%;
 	width: 85%;
