@@ -1,0 +1,40 @@
+.contact-form {
+	display: flex;
+	flex-flow: column;
+/*	border: 1px solid red;
+*/	margin: 1em 0 3em 0;
+
+}
+input {
+	height: 3em;
+}
+textarea {
+	height: 15em;
+}
+#contact-form {
+	margin: 1em 0;
+}
+
+@media screen and (min-width: 1240px){
+	.contact-form {
+		width: 40em;
+	}
+}
+/*iPads*/
+@media screen and (min-width: 945px) and (max-width: 1240px){
+	.contact-form {
+		width: 30em;
+	}	
+}
+/*Filler*/
+@media screen and (min-width: 760px) and (max-width: 945px){
+	.contact-form {
+		width: 25em;
+	}
+}
+/*Smart Phones*/
+@media only screen and (max-width: 760px) {
+	.contact-form {
+		width: 20em;
+	}	
+}

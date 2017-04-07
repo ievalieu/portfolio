@@ -1,0 +1,13 @@
+.about-content {
+	border: 1px solid red;
+/*	display: flex;
+	flex-flow: column;
+	justify-content: center;
+*/	text-align: justify;
+	margin: 0 2em;
+}
+
+.about {
+	margin-bottom: 3em;
+	height: 40em;
+}
